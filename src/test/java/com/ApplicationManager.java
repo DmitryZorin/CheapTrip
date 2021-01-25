@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
             wd.get("http://test70.lowcoststrip.com");
             wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             //    openSite("http://test70.lowcoststrip.com");
-            mainmenu = new MainMenuHelper();
+            mainmenu = new MainMenuHelper(wd);
         }
 
 //    public void openSite(String url) {

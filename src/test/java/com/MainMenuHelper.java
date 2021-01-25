@@ -1,8 +1,14 @@
 package com;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 public class MainMenuHelper extends HelperBase{
+
+
+    public MainMenuHelper(WebDriver wd) {
+        super(wd);
+    }
     public boolean isHamburgerMenuButtonPresent(){
         //  return isElementPresent(By.tagName("ion-menu-button"));
         return isElementPresent(By.cssSelector(".md.button.in-toolbar.in-toolbar-color.ion-activatable.ion-focusable.hydrated"));
