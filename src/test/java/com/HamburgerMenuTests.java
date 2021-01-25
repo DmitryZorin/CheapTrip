@@ -1,13 +1,13 @@
 package com;
 
-import ch.qos.logback.core.CoreConstants;
 import org.testng.annotations.Test;
 
-public class HamburgerMenuTests {
+public class HamburgerMenuTests extends TestBase {
 
     @Test
-    public void MainMenuOpensTest(){
-       
+    public void MainMenuOpensTest() {
+        app.getMainmenu().clickOnHamburgerMenu();
+        //   app.wd.findElement(By.tagName("ion-menu-button")).click();
 
     }
 }
